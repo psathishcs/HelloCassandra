@@ -23,7 +23,7 @@ public class Application {
 	    return new Docket(DocumentationType.SWAGGER_2)          
 	      .select()
 	      .apis(RequestHandlerSelectors.basePackage("org.hello.cassandra.spring.controller"))
-	      .paths(PathSelectors.ant("/foos/*"))
+	      .paths(PathSelectors.ant("/*"))
 	      .build()
 	      .apiInfo(apiInfo());
 	}
